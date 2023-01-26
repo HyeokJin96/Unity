@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -59,10 +60,39 @@ public static partial class GFunc
         return targetObj_;
     } // GetRootObj()
 
+    //! RectTransform 에서 sizeDelta를 찾아서 리턴하는 함수
+    public static Vector2 GetRectSizeDelta(this GameObject obj_)
+    {
+        return obj_.GetComponent<RectTransform>().sizeDelta;
+    }   //  GetRectSizeDelta()
+
     //! 현재 활성화되어 있는 씬을 찾아주는 함수
     public static Scene GetActiveScene()
     {
         Scene activeScene_ = SceneManager.GetActiveScene();
         return activeScene_;
+    }   //  GetActiveScene()
+
+    //! 오브젝트의 로컬 포지션을 변경하는 함수
+    public static void SetLocalPos(this GameObject obj_, float x, float y, float z)
+    {
+     obj_.transform.localPosition = new Vector3(x, y, z);
     }
+
+    //! 트랜스폼을 사용해서 오브젝트를 움직이는 함수
+    public static void Translate(this Transform transform_, Vector2 moveVector)
+    {
+        transform_.Translate(moveVector.x, moveVector.y, 0f);
+    }   //  Translate()
+
+    //! 컴포넌트 가져오는 함수
+    public static T GetComponentMust<T>(this GameObject obj)
+    {
+        T component_ = obj.GetComponent<T>();
+        bool isComponentValid = ((Component)(component_ as Component)).IsValid();
+
+        GFunc.Assert(component_.IsValid<T>() != false, $"{obj.name}에서 {component_.GetType().Name}을(를) 찾을 수 없습니다.");
+
+        return component_;
+    }   //  GetComponentMust()
 }
