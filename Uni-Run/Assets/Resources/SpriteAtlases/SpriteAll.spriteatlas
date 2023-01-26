@@ -40,17 +40,49 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: eed2d510cac42194483db642ea22111c, type: 3}
   - {fileID: 21300000, guid: 31247f90f98d4024f88848213e08b9db, type: 3}
-  - {fileID: 21300000, guid: dbda1718331393840af0d98fb9638f82, type: 3}
-  - {fileID: 21300000, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
-  - {fileID: 21300000, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
+  - {fileID: 1039965653, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: 876571947, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -1068319047, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -1739185887, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -419146500, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -1479133700, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: 1438970544, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -127518280, guid: dbda1718331393840af0d98fb9638f82, type: 3}
+  - {fileID: -1610636743, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: 1566229958, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: 280447041, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: 299349146, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: 770832105, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: 349262822, guid: 852110f83aea45d40b6202071f9f5253, type: 3}
+  - {fileID: -1450229514, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
+  - {fileID: 334300290, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
+  - {fileID: 118752740, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
+  - {fileID: 69446063, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
+  - {fileID: -1829315712, guid: 42e09bbda7011a9439685f4e012596a6, type: 3}
   - {fileID: 21300000, guid: 8c445e1ee86f68e4097955dd2360abfd, type: 3}
   - {fileID: 21300000, guid: 0402790fed707f14996666f6791895ea, type: 3}
   m_PackedSpriteNamesToIndex:
   - Platform
   - Platform_Long
-  - Toko_Run
-  - Toko_Die
-  - Toko_Jump
+  - Toko_Run_1
+  - Toko_Run_0
+  - Toko_Run_3
+  - Toko_Run_2
+  - Toko_Run_5
+  - Toko_Run_4
+  - Toko_Run_7
+  - Toko_Run_6
+  - Toko_Die_4
+  - Toko_Die_5
+  - Toko_Die_0
+  - Toko_Die_1
+  - Toko_Die_2
+  - Toko_Die_3
+  - Toko_Jump_0
+  - Toko_Jump_1
+  - Toko_Jump_2
+  - Toko_Jump_3
+  - Toko_Jump_4
   - Sky
   - Obstacle
   m_RenderDataMap: {}
