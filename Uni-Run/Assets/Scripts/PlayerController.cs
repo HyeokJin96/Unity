@@ -72,6 +72,9 @@ public class PlayerController : MonoBehaviour
 
         playerRigidbody.velocity = Vector2.zero;
         isDead = true;
+
+        //  게임 매니저로 플레이어가 죽었을 때의 UI 처리
+        GameManager.instance.OnPlayerDead();
     }   //  Die()
 
     //! 트리거 콜라이더를 가진 장애물과의 충돌을 감지
