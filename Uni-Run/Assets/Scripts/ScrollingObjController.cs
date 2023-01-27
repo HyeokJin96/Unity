@@ -9,9 +9,11 @@ public class ScrollingObjController : MonoBehaviour
 
     public float speed = default;
 
-    private GameObject objPrefab = default;
+    protected GameObject objPrefab = default;
     protected Vector2 objPrefabSize = default;
     protected List<GameObject> scrollingPool = default;
+    protected float prefabYPos = default;
+    
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -21,6 +23,7 @@ public class ScrollingObjController : MonoBehaviour
         GFunc.Assert(objPrefab != null || objPrefab != default);
 
         objPrefabSize = objPrefab.GetRectSizeDelta();
+        prefabYPos = objPrefab.transform.localPosition.y;
 
         //  { scrollingPool을 생성해서 주어진 수만큼 초기화 }
         GameObject tempObj = default;
@@ -49,6 +52,7 @@ public class ScrollingObjController : MonoBehaviour
             return;
         }   //  if : 스크롤링 할 오브젝트가 존재하지 않는 경우
 
+        // 게임이 정상 진행중인 경우
         if (GameManager.instance.isGameOver == false)
         {
             //  { 배경에 움직임을 주는 로직 }
